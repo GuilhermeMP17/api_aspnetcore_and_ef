@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "StoreAPI",
+		"_postman_id": "847d91b0-700d-bdf4-06ec-8770ddae3a5d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_categories",
+			"request": {
+				"url": "http://localhost:5000/v1/categories",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post_categories",
+			"request": {
+				"url": "http://localhost:5000/v1/categories",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"Sistemas Operacionais 1 (Windows)\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "put_categories",
+			"request": {
+				"url": "http://localhost:5000/v1/categories",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"2\",\n\t\"title\":\"Sistemas Operacionais 1 (Windows)\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post_products",
+			"request": {
+				"url": "http://localhost:5000/v1/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"Novo teste1234\",\n\t\"description\": \"\",\n\t\"price\": \"150\",\n\t\"quantity\": \"10\",\n\t\"image\": \"image aqui\",\n\t\"idCategory\": \"1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/v1/products/",
+			"request": {
+				"url": "http://localhost:5000/v1/products/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
